@@ -1,8 +1,8 @@
 #!/bin/bash
-# Clown Hacktivism Team
+# AnonGhost Tool
 # PayPal Valid V12
-# 18 December 2K17
-# By X-Mr.R4h1M
+# 10 AUGUST 2K18
+# By Silent
 
 #set -x
 cat <<EOF
