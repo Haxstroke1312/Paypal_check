@@ -29,7 +29,7 @@ Options:
                     move result folder to haschecked/
 -h                  Show this manual to screen
 -u                  Check integrity file then update
-ORIGINAL SCRIPT BY: < Silent > Insta : @Sikent_anons
+ORIGINAL SCRIPT BY: < Silent > Insta : @Silent_anons
 "
  exit 1 
 }
@@ -169,7 +169,7 @@ malhadi_request() {
   # countryCode="$(echo "$posted" | grep 'merchantCountr' | grep -o -P '(?<=merchantCountry=).*(?=\")')"
   countryCode="$(echo "$posted" | grep -o -P '(?<=paypal.com).*(?=cgi-bin)' | tail -1 | awk -F[\/\/] '{print $2}' | tr '[:lower:]' '[:upper:]')"
   header="`date +%H:%M:%S` $inputFile -> $targetFolder"
-  footer="[root@X-Mr.R4h1M] $(($duration % 60))sec.\n"
+  footer="[root@Silent] $(($duration % 60))sec.\n"
 
   if [[ $countryCode == '' ]]; then
     printf "[$header] $2/$3. ${RED}DIE => $1 ${NC} $footer"
@@ -248,4 +248,4 @@ fi
 #rm $inputFile
 duration=$SECONDS
 echo "Checking done in $(($duration / 3600)) hours $(($duration / 60 % 60)) minutes and $(($duration % 60)) seconds."
-echo "+==========+ Valid Paypal - v12ppval - Silent +==========+"
+echo "+==========+ Valid Paypal - AnonGhost - Silent +==========+"
